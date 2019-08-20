@@ -5,18 +5,11 @@ require_relative './exercise_3'
 require_relative './exercise_4'
 require_relative './exercise_5'
 require_relative './exercise_6'
+require_relative './exercise_7'
 
-puts "Exercise 7"
-puts "----------"
+@store2 = Store.find(2)
 
-# Your code goes here ...
+@store2.employees.create(first_name: "Selin", last_name: "Huang", hourly_rate: 60)
 
-# puts "Enter a store name"
-# print ">"
-# @store_name = gets.chomp
-
-# add = Store.create(name: @store_name)
-
-# puts add.errors.full_messages
-
-# puts Store.count
+@employee6 = Employee.find(6)
+puts @employee6.password
